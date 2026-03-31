@@ -1,29 +1,25 @@
-# Example Rails project with React
+# React on Rails Migration Example
 
-This is an example project which uses the `react-rails` gem with some modern JS tooling to provide a decent developer experience. React components can either be client or server side rendered, and you can install any packages on `npm`.
+This repository is a migrated version of [ganchdev/react-rails-example](https://github.com/ganchdev/react-rails-example), converted from `react-rails` to [`react_on_rails`](https://github.com/shakacode/react_on_rails).
 
-## Requirements:
-- Ruby 3.1
-- NodeJS 16 or greater
-- Yarn
+## Requirements
+- Ruby 3.1+
+- Node.js 18+
+- Yarn 1.x
 
-## Included in the project:
-- [jsbundling-rails](https://github.com/rails/jsbundling-rails) - adds esbuild to Rails 
-- [react-rails](https://github.com/reactjs/react-rails) - a gem that brings React, adapters and helpers for Rails
-- [mini_racer](https://github.com/rubyjs/mini_racer) - server-renders components 
-- [terser](https://github.com/ahorek/terser-ruby) - uglifier replacement
-- [tailwindcss-rails](https://github.com/rails/tailwindcss-rails) - Tailwind CSS support in Rails
-- [js-routes](https://github.com/railsware/js-routes) - use all named Rails routes in javascript
-- [react-server.js](https://github.com/naft-a/react-rails-example/blob/main/vendor/javascript/react-server.js) - the compiled React js library that is used for SSR when rendering components, it can be found in the react-rails source code 
+## What This Demonstrates
+- Migrating from `react-rails` to `react_on_rails`
+- `shakapacker`-based client and server bundles
+- React component registration and SSR setup
+- Development process options via `bin/dev`
 
-## Notes:
+## Quick Start
+1. `bundle install`
+2. `yarn install`
+3. `bin/rails db:prepare`
+4. `bin/dev`
+5. Visit `http://localhost:3000/hello_world`
 
-The overall setup feels clean and straightforward, esbuild was pretty easy to setup and required no real configuration after installing the `jsbundling-rails` gem, literally plug-and-play. I've also included Tailwind CSS in the project as an example, and on top of that I added the [Daisy UI](https://daisyui.com/) plugin to assist with the components on the example pages - all setup in the `tailwind.config.js` files. That's pretty much it!
-
-### To get started run:
-`bin/setup`
-
-### Run all processes in development
-`bin/dev`
-
-Happy tweaking!
+## Notes
+- This app is intentionally minimal and focused on migration outcomes.
+- Generated React on Rails files are kept in-repo so users can inspect exact changes after migration.
