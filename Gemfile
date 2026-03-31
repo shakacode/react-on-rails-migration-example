@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby "3.1.0"
+ruby ">= 3.1.0"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.7", ">= 7.0.7.2"
@@ -22,7 +22,7 @@ gem "jbuilder"
 gem "mini_racer", "~> 0.8.0"
 
 # The library which provides react helpers and more in rails
-gem "react-rails"
+gem "react_on_rails"
 
 # Modern javscript compressor
 gem "terser"
@@ -83,3 +83,5 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+gem "shakapacker", "= 9.7"

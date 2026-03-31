@@ -53,3 +53,15 @@
 # Ignore automatically generated js-routes files.
 /app/javascript/routes.js
 /app/javascript/routes.d.ts
+
+/public/packs
+/public/packs-test
+/node_modules
+/yarn-error.log
+yarn-debug.log*
+.yarn-integrity
+
+# React on Rails (generated and local files)
+**/generated/**
+ssr-generated
+.env
